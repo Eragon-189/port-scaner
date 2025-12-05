@@ -16,7 +16,7 @@ async def main():
     PORTS = input("Ports to check(separate by ','):")
     if PORTS == "all":
         PORTS = list(range(1, 65536))
-    elif PORTS == "p 1":
+    elif PORTS == "preset 1":
         PORTS = [22, 80, 443, 8080, 3306]
     else:
         PORTS = [int(p.strip()) for p in PORTS.split(",")]
